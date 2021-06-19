@@ -1,0 +1,7 @@
+.DS_Store
+.Trashes
+modules.xml
+workspace.xml
+xcode.xml
+DerivedData/
+build/
