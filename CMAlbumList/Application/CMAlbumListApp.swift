@@ -11,7 +11,7 @@ import SwiftUI
 struct CMAlbumListApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AlbumListView()
         }
     }
 }

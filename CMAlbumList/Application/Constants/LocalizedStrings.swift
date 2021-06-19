@@ -8,5 +8,5 @@
 import Foundation
 
 struct LocalizedStrings {
-    
+    static let mainTittle = NSLocalizedString("Album List", comment: "")
 }

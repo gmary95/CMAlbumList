@@ -3,12 +3,14 @@ import SwiftUI
 
 extension Color {
     static var textPrimary: Color {
-        return Color.black
+        Color.black
     }
     static var textSecondary: Color {
-        return Color.gray
+        Color.gray
     }
-    
+    static var strokeColor: Color {
+        Color.red
+    }
     
     init(hex: String) {
             let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
