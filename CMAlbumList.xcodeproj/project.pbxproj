@@ -16,6 +16,10 @@
 		8E6E0ECC267E056300A80DF8 /* Color+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0ECB267E056300A80DF8 /* Color+Styles.swift */; };
 		8E6E0ED0267E056B00A80DF8 /* UIFont+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0ECE267E056B00A80DF8 /* UIFont+Typography.swift */; };
 		8E6E0ED1267E056B00A80DF8 /* UIFont+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0ECF267E056B00A80DF8 /* UIFont+Styles.swift */; };
+		8E6E0EDF267E0C1D00A80DF8 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8E6E0EDE267E0C1D00A80DF8 /* .gitkeep */; };
+		8E6E0EE2267E0C3400A80DF8 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8E6E0EE1267E0C3400A80DF8 /* .gitkeep */; };
+		8E6E0EE5267E0C4400A80DF8 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8E6E0EE4267E0C4400A80DF8 /* .gitkeep */; };
+		8E6E0EE8267E0C4E00A80DF8 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8E6E0EE7267E0C4E00A80DF8 /* .gitkeep */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		8E6E0ECB267E056300A80DF8 /* Color+Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Styles.swift"; sourceTree = "<group>"; };
 		8E6E0ECE267E056B00A80DF8 /* UIFont+Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Typography.swift"; sourceTree = "<group>"; };
 		8E6E0ECF267E056B00A80DF8 /* UIFont+Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Styles.swift"; sourceTree = "<group>"; };
+		8E6E0EDE267E0C1D00A80DF8 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8E6E0EE1267E0C3400A80DF8 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8E6E0EE4267E0C4400A80DF8 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8E6E0EE7267E0C4E00A80DF8 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 		8E6E0EB2267E025800A80DF8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8E6E0EDE267E0C1D00A80DF8 /* .gitkeep */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -123,6 +132,7 @@
 		8E6E0EB4267E026900A80DF8 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				8E6E0EE4267E0C4400A80DF8 /* .gitkeep */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -130,6 +140,7 @@
 		8E6E0EB5267E027000A80DF8 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				8E6E0EE7267E0C4E00A80DF8 /* .gitkeep */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -192,6 +203,7 @@
 		8E6E0EDD267E078400A80DF8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8E6E0EE1267E0C3400A80DF8 /* .gitkeep */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -255,7 +267,11 @@
 			files = (
 				8E6E0EA7267E022000A80DF8 /* Preview Assets.xcassets in Resources */,
 				8E6E0EB7267E02E800A80DF8 /* .gitignore in Resources */,
+				8E6E0EE2267E0C3400A80DF8 /* .gitkeep in Resources */,
+				8E6E0EE5267E0C4400A80DF8 /* .gitkeep in Resources */,
 				8E6E0EA4267E022000A80DF8 /* Assets.xcassets in Resources */,
+				8E6E0EDF267E0C1D00A80DF8 /* .gitkeep in Resources */,
+				8E6E0EE8267E0C4E00A80DF8 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
