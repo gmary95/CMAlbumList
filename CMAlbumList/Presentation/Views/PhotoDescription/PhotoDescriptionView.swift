@@ -8,32 +8,28 @@
 import SwiftUI
 
 struct PhotoDescriptionView: View {
-    var photo: Photo?
+    @State var show = false
     
-    private let imageSize: CGFloat = 200
-    private let radius: CGFloat = 10
-    private let lineWidth: CGFloat = 4
-    private let lineLimit = 50
+    var photo: Photo?
     
     var body: some View {
         VStack {
             ImageFromUrl(url: photo?.url ?? "")
-                .frame(width: imageSize, height: imageSize)
-                .clipShape(Circle())
+                .aspectRatio(contentMode: .fill)
+                .clipShape(Rectangle())
                 .overlay(
-                    Circle().stroke(Color.strokeColor, lineWidth: lineWidth)
+                    Rectangle()
+                        .foregroundColor(.clear)
                 )
-                .shadow(radius: radius)
-            Text(photo?.title ?? "")
-                .font(.title)
-                .foregroundColor(.textPrimary)
-            Divider()
-            Text(photo?.url ?? "")
-                .font(.headline)
-                .multilineTextAlignment(.center)
-                .lineLimit(lineLimit)
-                .foregroundColor(.textSecondary)
-        }.padding().navigationBarTitle(Text(photo?.title ?? ""), displayMode: .automatic)
+                .onTapGesture {
+                    withAnimation(.spring()) {
+                        show.toggle()
+                    }
+                }
+            if show {
+                TextDescriptionView(photo: photo)
+            }
+        }.navigationBarTitle(Text(photo?.title ?? ""), displayMode: .automatic)
     }
 }
 

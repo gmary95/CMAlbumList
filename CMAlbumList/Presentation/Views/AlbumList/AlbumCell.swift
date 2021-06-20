@@ -13,8 +13,16 @@ struct AlbumCell : View {
     var body: some View {
         return NavigationLink(destination: PhotoListView(album: album)) {
             VStack(alignment: .leading) {
-                Text(album.title)
-                    .foregroundColor(.textPrimary)
+                Rectangle()
+                    .fill(
+                        LinearGradient(gradient: Gradient(colors: [.darkGradient, .lightGradient]), startPoint: .bottom, endPoint: .topLeading)
+                        )
+                    .overlay(
+                        Text(album.title)
+                            .foregroundColor(.textPrimary)
+                            .padding(10)
+                    )
+                    .frame(height: 220)
             }
         }
     }

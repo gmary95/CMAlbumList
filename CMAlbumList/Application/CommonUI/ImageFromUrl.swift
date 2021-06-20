@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct ImageFromUrl: View {
     private enum LoadState {
@@ -21,8 +22,8 @@ struct ImageFromUrl: View {
                 fatalError("Invalid URL: \(url)")
             }
 
-            URLSession.shared.dataTask(with: parsedURL) { data, response, error in
-                if let data = data, data.count > 0 {
+            AF.request(parsedURL).response { response in
+                if let data = response.data, data.count > 0 {
                     self.data = data
                     self.state = .success
                 } else {

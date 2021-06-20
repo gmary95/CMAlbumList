@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1CF17A267F637800CBDC7C /* TextDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CF179267F637800CBDC7C /* TextDescriptionView.swift */; };
 		8E6E0EA0267E021F00A80DF8 /* CMAlbumListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0E9F267E021F00A80DF8 /* CMAlbumListApp.swift */; };
 		8E6E0EA2267E021F00A80DF8 /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0EA1267E021F00A80DF8 /* AlbumListView.swift */; };
 		8E6E0EA4267E022000A80DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6E0EA3267E022000A80DF8 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		7094260B1C04C695B75A28EE /* Pods_CMAlbumList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMAlbumList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1CF179267F637800CBDC7C /* TextDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDescriptionView.swift; sourceTree = "<group>"; };
 		8E6E0E9C267E021F00A80DF8 /* CMAlbumList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMAlbumList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6E0E9F267E021F00A80DF8 /* CMAlbumListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMAlbumListApp.swift; sourceTree = "<group>"; };
 		8E6E0EA1267E021F00A80DF8 /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				8E6E0F43267E384D00A80DF8 /* PhotoDescriptionView.swift */,
+				8E1CF179267F637800CBDC7C /* TextDescriptionView.swift */,
 			);
 			path = PhotoDescription;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				8E6E0F44267E384D00A80DF8 /* PhotoDescriptionView.swift in Sources */,
 				8E6E0F23267E1A9900A80DF8 /* Album.swift in Sources */,
 				8E6E0F29267E250B00A80DF8 /* AlbumManagmentUseCase.swift in Sources */,
+				8E1CF17A267F637800CBDC7C /* TextDescriptionView.swift in Sources */,
 				8E6E0F2E267E2BAF00A80DF8 /* AlbumListViewModel.swift in Sources */,
 				8E6E0F4B267E3DB100A80DF8 /* ImageFromUrl.swift in Sources */,
 				8E6E0F5E267E4A3A00A80DF8 /* PhotoManagementRepositoryImpl.swift in Sources */,

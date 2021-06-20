@@ -10,13 +10,28 @@ import SwiftUI
 struct AlbumListView: View {
     @ObservedObject var viewModel = AlbumListViewModel()
     
+    private var spacing: CGFloat = 5
+    private var cornerRadius: CGFloat = 5
+    private let shadowRadius: CGFloat = 4
+    private let padding: CGFloat = 10
+    
+    private var gridItemLayout = [GridItem(.flexible())]
+    
     var body: some View {
         NavigationView {
-            List(viewModel.albumArr) { album in
-                AlbumCell(album: album)
+            ScrollView {
+                LazyVGrid(columns: gridItemLayout, spacing: spacing) {
+                    ForEach(viewModel.albumArr) { album in
+                        AlbumCell(album: album)
+                            .cornerRadius(cornerRadius)
+                            .shadow(radius: shadowRadius)
+                            .animation(.default)
+                    }
+                }
+                .padding(padding)
             }
+            .animation(.default)
             .navigationBarTitle(Text(LocalizedStrings.mainTittle), displayMode: .inline)
-            .foregroundColor(.textPrimary)
         }
     }
 }
