@@ -13,18 +13,19 @@ final class PhotoListViewModel: ObservableObject {
     @Published var photoArr: [Photo] = []
     
     private var cancellation: AnyCancellable?
-    private let usecase = PhotoManagmentUseCase()
+    private let usecase: PhotoManagmentUseCase
     
     init() {
-        fetchPhoto(albumId: nil)
+        usecase = PhotoManagmentUseCase(albumId: nil)
     }
     
     init(albumId: Int) {
-        fetchPhoto(albumId: albumId)
+        usecase = PhotoManagmentUseCase(albumId: albumId)
+        fetchPhoto()
     }
     
-    func fetchPhoto(albumId: Int?) {
-        cancellation = usecase.fetch(albumId: albumId)
+    func fetchPhoto() {
+        cancellation = usecase.fetch()
             .sink(receiveCompletion: { _ in },
                   receiveValue: { [weak self] response in
                     switch response.result {

@@ -7,5 +7,5 @@
 import Alamofire
 
 protocol AlbumManagementRepository {
-    func getAlbums(url: String) -> DataResponsePublisher<[Album]>
+    func getAlbums() -> DataResponsePublisher<[Album]>
 }

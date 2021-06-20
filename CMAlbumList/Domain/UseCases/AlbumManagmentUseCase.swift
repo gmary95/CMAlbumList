@@ -15,6 +15,6 @@ final class AlbumManagmentUseCase {
     }
     
     func fetch() -> DataResponsePublisher<[Album]> {
-        repository.getAlbums(url: "/albums")
+        repository.getAlbums()
     }
 }

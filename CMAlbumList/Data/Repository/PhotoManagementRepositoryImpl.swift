@@ -8,11 +8,15 @@
 import Alamofire
 
 final class PhotoManagementRepositoryImpl {
-    private let service = NetworkService()
+    private let service: PhotosService
+    
+    init(albumId: String) {
+        service = PhotosService(albumId: albumId)
+    }
 }
 
 extension PhotoManagementRepositoryImpl: PhotoManagementRepository {
-    func getPhotos(url: String, parameters: [String: String]) -> DataResponsePublisher<[Photo]> {
-        service.getPhotos(url: url, parameters: parameters)
+    func getPhotos() -> DataResponsePublisher<[Photo]> {
+        service.get()
     }
 }

@@ -7,11 +7,15 @@
 import Alamofire
 
 final class AlbumManagementRepositoryImpl {
-    private let service = NetworkService()
+    private let service: AlbumsService
+    
+    init() {
+        service = AlbumsService()
+    }
 }
 
 extension AlbumManagementRepositoryImpl: AlbumManagementRepository {
-    func getAlbums(url: String) -> DataResponsePublisher<[Album]> {
-        service.getAlbums(url: url)
+    func getAlbums() -> DataResponsePublisher<[Album]> {
+        service.get()
     }
 }

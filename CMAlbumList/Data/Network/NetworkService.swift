@@ -8,14 +8,34 @@
 import Foundation
 import Alamofire
 
-class NetworkService {
+protocol NetworkService {
+    associatedtype T
+    var request: RequestProtocol { get }
     
-    func getAlbums(url: String) -> DataResponsePublisher<[Album]> {
-        AF.request(NetworkConstants.baseURL + url).publishDecodable(type: [Album].self)
-    }
-    
-    func getPhotos(url: String, parameters: [String: String]) -> DataResponsePublisher<[Photo]> {
-        AF.request(NetworkConstants.baseURL + url, parameters: parameters).publishDecodable(type: [Photo].self)
-    }
-    
+    func get() -> DataResponsePublisher<[T]>
 }
+
+class AlbumsService: NetworkService {
+    var request: RequestProtocol
+    
+    init() {
+        self.request = GetAlbumsRequest()
+    }
+    
+    func get() -> DataResponsePublisher<[Album]> {
+        AF.request(NetworkConstants.baseURL + request.path).publishDecodable(type: [Album].self)
+    }
+}
+
+class PhotosService: NetworkService {
+    var request: RequestProtocol
+    
+    init(albumId: String) {
+        self.request = GetPhotosRequest(albumId: albumId)
+    }
+    
+    func get() -> DataResponsePublisher<[Photo]> {
+        AF.request(NetworkConstants.baseURL + request.path, parameters: request.parameters).publishDecodable(type: [Photo].self)
+    }
+}
+

@@ -8,5 +8,5 @@
 import Alamofire
 
 protocol PhotoManagementRepository {
-    func getPhotos(url: String, parameters: [String: String]) -> DataResponsePublisher<[Photo]>
+    func getPhotos() -> DataResponsePublisher<[Photo]>
 }

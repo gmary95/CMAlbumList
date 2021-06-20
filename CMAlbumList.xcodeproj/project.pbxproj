@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8E1CF17A267F637800CBDC7C /* TextDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CF179267F637800CBDC7C /* TextDescriptionView.swift */; };
+		8E1CF17D267F705200CBDC7C /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CF17C267F705200CBDC7C /* NetworkEndpoint.swift */; };
+		8E1CF180267F726E00CBDC7C /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CF17F267F726E00CBDC7C /* NetworkRequest.swift */; };
 		8E6E0EA0267E021F00A80DF8 /* CMAlbumListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0E9F267E021F00A80DF8 /* CMAlbumListApp.swift */; };
 		8E6E0EA2267E021F00A80DF8 /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0EA1267E021F00A80DF8 /* AlbumListView.swift */; };
 		8E6E0EA4267E022000A80DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6E0EA3267E022000A80DF8 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		7094260B1C04C695B75A28EE /* Pods_CMAlbumList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMAlbumList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1CF179267F637800CBDC7C /* TextDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDescriptionView.swift; sourceTree = "<group>"; };
+		8E1CF17C267F705200CBDC7C /* NetworkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
+		8E1CF17F267F726E00CBDC7C /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		8E6E0E9C267E021F00A80DF8 /* CMAlbumList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMAlbumList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6E0E9F267E021F00A80DF8 /* CMAlbumListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMAlbumListApp.swift; sourceTree = "<group>"; };
 		8E6E0EA1267E021F00A80DF8 /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
@@ -257,6 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				8E6E0F08267E134F00A80DF8 /* NetworkService.swift */,
+				8E1CF17C267F705200CBDC7C /* NetworkEndpoint.swift */,
+				8E1CF17F267F726E00CBDC7C /* NetworkRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -440,10 +446,12 @@
 				8E6E0F31267E2EB800A80DF8 /* AlbumCell.swift in Sources */,
 				8E6E0F56267E473800A80DF8 /* AlbumManagementRepositoryImpl.swift in Sources */,
 				8E6E0EC9267E055700A80DF8 /* LocalizedStrings.swift in Sources */,
+				8E1CF17D267F705200CBDC7C /* NetworkEndpoint.swift in Sources */,
 				8E6E0F37267E363B00A80DF8 /* PhotoListView.swift in Sources */,
 				8E6E0F5B267E49EB00A80DF8 /* PhotoManagementRepository.swift in Sources */,
 				8E6E0F40267E377E00A80DF8 /* PhotoCell.swift in Sources */,
 				8E6E0F47267E3AC000A80DF8 /* PhotoManagmentUseCase.swift in Sources */,
+				8E1CF180267F726E00CBDC7C /* NetworkRequest.swift in Sources */,
 				8E6E0F16267E14FB00A80DF8 /* NetworkConstants.swift in Sources */,
 				8E6E0ED1267E056B00A80DF8 /* UIFont+Styles.swift in Sources */,
 				8E6E0F51267E472500A80DF8 /* AlbumManagementRepository.swift in Sources */,

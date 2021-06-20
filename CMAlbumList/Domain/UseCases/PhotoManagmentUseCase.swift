@@ -11,14 +11,11 @@ import Alamofire
 final class PhotoManagmentUseCase {
     private let repository: PhotoManagementRepository
     
-    init() {
-        self.repository = PhotoManagementRepositoryImpl()
+    init(albumId: Int?) {
+        self.repository = PhotoManagementRepositoryImpl(albumId: albumId?.description ?? "")
     }
     
-    func fetch(albumId: Int?) -> DataResponsePublisher<[Photo]> {
-        let queryParams: [String: String] = [
-            "albumId": albumId?.description ?? ""
-        ]
-        return repository.getPhotos(url: "/photos", parameters: queryParams)
+    func fetch() -> DataResponsePublisher<[Photo]> {
+        return repository.getPhotos()
     }
 }
