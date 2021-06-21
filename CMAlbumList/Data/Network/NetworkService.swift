@@ -23,7 +23,8 @@ class AlbumsService: NetworkService {
     }
     
     func get() -> DataResponsePublisher<[Album]> {
-        AF.request(NetworkConstants.baseURL + request.path).publishDecodable(type: [Album].self)
+        AF.request(NetworkConstants.baseURL
+                    + request.path).publishDecodable(type: [Album].self)
     }
 }
 

@@ -10,6 +10,9 @@ import SwiftUI
 struct AlbumCell : View {
     let album: Album
     
+    private let height: CGFloat = 220
+    private let padding: CGFloat = 10
+    
     var body: some View {
         return NavigationLink(destination: PhotoListView(album: album)) {
             VStack(alignment: .leading) {
@@ -20,9 +23,9 @@ struct AlbumCell : View {
                     .overlay(
                         Text(album.title)
                             .foregroundColor(.textPrimary)
-                            .padding(10)
+                            .padding(padding)
                     )
-                    .frame(height: 220)
+                    .frame(height: height)
             }
         }
     }

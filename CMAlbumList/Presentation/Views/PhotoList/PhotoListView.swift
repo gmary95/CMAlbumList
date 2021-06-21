@@ -16,7 +16,9 @@ struct PhotoListView: View {
     private let shadowRadius: CGFloat = 4
     private let padding: CGFloat = 10
     
-    private var gridItemLayout = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    private var gridItemLayout = [GridItem(.flexible()),
+                                  GridItem(.flexible()),
+                                  GridItem(.flexible())]
     
     init(album: Album) {
         self.album = album
