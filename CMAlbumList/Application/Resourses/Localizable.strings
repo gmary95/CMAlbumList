@@ -7,3 +7,6 @@
 */
 
 "album_list_title" = "Album List";
+"error_text" = "Coudn't connect to the server.  Please try again later.";
+"error_title" = "Error";
+"ok_button" = "OK";

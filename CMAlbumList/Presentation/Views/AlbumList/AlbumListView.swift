@@ -19,7 +19,7 @@ struct AlbumListView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            RefreshableScrollView(refreshing: self.$viewModel.loading) {
                 LazyVGrid(columns: gridItemLayout, spacing: spacing) {
                     ForEach(viewModel.albumArr) { album in
                         AlbumCell(album: album)
@@ -29,6 +29,11 @@ struct AlbumListView: View {
                     }
                 }
                 .padding(padding)
+            }
+            .alert(isPresented: self.$viewModel.isPresentingAlert) {
+                Alert(title: Text(LocalizedStrings.errorTitle),
+                      message: Text(LocalizedStrings.errorText),
+                      dismissButton: .default(Text(LocalizedStrings.okButton)))
             }
             .animation(.default)
             .navigationBarTitle(Text(LocalizedStrings.mainTittle), displayMode: .inline)

@@ -37,6 +37,7 @@
 		8E6E0F56267E473800A80DF8 /* AlbumManagementRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0F55267E473800A80DF8 /* AlbumManagementRepositoryImpl.swift */; };
 		8E6E0F5B267E49EB00A80DF8 /* PhotoManagementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0F5A267E49EB00A80DF8 /* PhotoManagementRepository.swift */; };
 		8E6E0F5E267E4A3A00A80DF8 /* PhotoManagementRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0F5D267E4A3A00A80DF8 /* PhotoManagementRepositoryImpl.swift */; };
+		8E77152F2680755A00F12F4A /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E77152E2680755A00F12F4A /* RefreshableScrollView.swift */; };
 		C8067DBA3ADB72434C8D4915 /* Pods_CMAlbumList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7094260B1C04C695B75A28EE /* Pods_CMAlbumList.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		8E6E0F55267E473800A80DF8 /* AlbumManagementRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumManagementRepositoryImpl.swift; sourceTree = "<group>"; };
 		8E6E0F5A267E49EB00A80DF8 /* PhotoManagementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManagementRepository.swift; sourceTree = "<group>"; };
 		8E6E0F5D267E4A3A00A80DF8 /* PhotoManagementRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManagementRepositoryImpl.swift; sourceTree = "<group>"; };
+		8E77152E2680755A00F12F4A /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
 		9E0D14EFFD0DF4C1EAB637AB /* Pods-CMAlbumList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMAlbumList.release.xcconfig"; path = "Target Support Files/Pods-CMAlbumList/Pods-CMAlbumList.release.xcconfig"; sourceTree = "<group>"; };
 		C711B3DC861212CFA9AD7C65 /* Pods-CMAlbumList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMAlbumList.debug.xcconfig"; path = "Target Support Files/Pods-CMAlbumList/Pods-CMAlbumList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -301,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				8E6E0F4A267E3DB100A80DF8 /* ImageFromUrl.swift */,
+				8E77152E2680755A00F12F4A /* RefreshableScrollView.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				8E6E0F37267E363B00A80DF8 /* PhotoListView.swift in Sources */,
 				8E6E0F5B267E49EB00A80DF8 /* PhotoManagementRepository.swift in Sources */,
 				8E6E0F40267E377E00A80DF8 /* PhotoCell.swift in Sources */,
+				8E77152F2680755A00F12F4A /* RefreshableScrollView.swift in Sources */,
 				8E6E0F47267E3AC000A80DF8 /* PhotoManagmentUseCase.swift in Sources */,
 				8E1CF180267F726E00CBDC7C /* NetworkRequest.swift in Sources */,
 				8E6E0F16267E14FB00A80DF8 /* NetworkConstants.swift in Sources */,

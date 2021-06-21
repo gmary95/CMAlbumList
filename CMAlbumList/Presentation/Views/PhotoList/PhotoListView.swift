@@ -26,18 +26,21 @@ struct PhotoListView: View {
     }
     
     var body: some View {
-        ScrollView {
+        RefreshableScrollView(refreshing: self.$viewModel.loading) {
             LazyVGrid(columns: gridItemLayout, spacing: spacing) {
                 ForEach(viewModel.photoArr) { photo in
                     PhotoCell(photo: photo)
                         .cornerRadius(cornerRadius)
                         .shadow(radius: shadowRadius)
-                        .animation(.default)
                 }
             }
             .padding(padding)
         }
-        .animation(.default)
+        .alert(isPresented: self.$viewModel.isPresentingAlert) {
+            Alert(title: Text(LocalizedStrings.errorTitle),
+                  message: Text(LocalizedStrings.errorText),
+                  dismissButton: .default(Text(LocalizedStrings.okButton)))
+        }
         .navigationBarTitle(album.title, displayMode: .automatic)
     }
 }
