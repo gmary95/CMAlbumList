@@ -14,7 +14,7 @@ struct PhotoDescriptionView: View {
     
     var body: some View {
         VStack {
-            ImageFromUrl(url: photo?.url ?? "")
+            ImageFromUrl(url: photo?.url ?? "") // if you need to download an image on a slow internet you might want to consider a partial download
                 .aspectRatio(contentMode: .fill)
                 .clipShape(Rectangle())
                 .overlay(
